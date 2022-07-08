@@ -1,3 +1,15 @@
+## Meeting Dated: 08-07-2022
+
+1. Take 10-15 sample sentences from XNLI data
+2. Chunking of sentences using different methods - a> RST parser, b> Syntactic parser, c> entity mentions
+3. Using the chunks taken from each of the techniques search for images from imageNet/VisualGenome
+4. Manually verify the relevance of the images for each of those techniques and select the best method
+
+Additional Notes: While considering objects for the affordances, take initial seed set of objects from conceptNet/WordNet
+Resources: 
+https://stanfordnlp.github.io/CoreNLP/demo.html
+https://corenlp.run/
+
 ## Meeting Dated: 23-06-2022
 
 1. Email the authors about the affordance Knowledge Base
