@@ -1,3 +1,8 @@
+## Meeting Dated: 04-08-2022
+1. Use 100k visualgenome encoded images for searching for 100 examples of xnli  
+2. Filter the images, For each sentence/noun phrases --> corresponding images (2-3)
+3. Use the KB to predict the affordance for the noun phrases
+
 ## Meeting Dated: 08-07-2022
 
 1. Take 10-15 sample sentences from XNLI data
