@@ -1,6 +1,6 @@
 ## Meeting Dated: 18-08-2022
 1. The most appropriate pipeline for affordance prediction could be - 
-   collect the set of candidate images for each noun_phrases --> re-rank the images using the context information from the sentences (from which noun_phrases being extracted) --> Use Fast R-CNN for feature extraction (patches/bbox) --> apply ResNet for visual (or other) attributes prediction --> predicting affordances for each noun_phrases
+   collect the set of candidate images for each noun_phrases --> re-rank the images using the context information from the sentences (from which noun_phrases being extracted) --> Use Faster R-CNN for feature extraction (patches/bbox) --> apply ResNet for visual (or other) attributes prediction --> predicting affordances for each noun_phrases
 2. Improve the candidate image collection and incorporating sentence information for re-ranking (Daivik & Binil)
 3. Use Fast R-CNN for feature extarction and apply ResNet for visual attribute prediction and finally affordance prediction (Daiviki & Sayantan)
 4. Think about the tasks such as commonsense reasoning which could be performed using objects and it's corresponding affordances.
