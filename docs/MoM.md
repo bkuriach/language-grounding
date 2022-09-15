@@ -1,3 +1,6 @@
+
+
+https://paperswithcode.com/paper/vilt-vision-and-language-transformer-without
 ## Meeting Dated: 01-09-2022
 1. Finish the visual attribute prediction for the candidate images by this weekend (at least for the uncontextualized word embeddings)
 2. Taking weighted averages of both sentence and word embeddings is not a very good idea. Think about other Contextualized embeddings (similar to COBE) and improve relevance of the candidate images
