@@ -1,3 +1,25 @@
+## Meeting Dated: 01-09-2022
+1. Finish the visual attribute prediction for the candidate images by this weekend (at least for the uncontextualized word embeddings)
+2. Taking weighted averages of both sentence and word embeddings is not a very good idea. Think about other Contextualized embeddings (similar to COBE) and improve relevance of the candidate images
+3. For each of the top predicted candidate images for a noun_phrase carry forward the confidence score of each of predicted attributes (e.g. round, square etc) to next step (i.e. affordance prediction)
+3. For affordance prediction, we can apply markov networks properties (undirected graphical model):
+
+Example -  two objects - ball and chair, 
+                  and candidate affordances -  round, square, tall, small
+                  0.7 * 0.5: ball, round + chair,tall =  w1
+                  0.3 * 0.5: ball, square + chair,tall = w2
+                  0.7 * 0.5: ball, round + chair, small = w3
+                  0.3 * 0.5: ball, square + chair, small = w4
+
+                 predictions using markov logic
+                 y1 = F(w1) = 0.35
+                 ......
+                 y4 = F(w4) = 0.15
+                i.e. each probabilities are independent of each other
+                (Ref: Sato's Distribution Semantics - independent random variables)
+4. Discuss the paper https://aclanthology.org/2021.findings-emnlp.370.pdf and share a short summary in the chat by next week. Explore the PIQA (PhysicalQA) and plan how we can incorporate the affordance data (we are creating) in SRL (semantic role labelling) and similar tasks by fine tuning a language model. 
+
+
 ## Meeting Dated: 18-08-2022
 1. The most appropriate pipeline for affordance prediction could be - 
    collect the set of candidate images for each noun_phrases --> re-rank the images using the context information from the sentences (from which noun_phrases being extracted) --> Use Faster R-CNN for feature extraction (patches/bbox) --> apply ResNet for visual (or other) attributes prediction --> predicting affordances for each noun_phrases
