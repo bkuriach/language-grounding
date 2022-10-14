@@ -1,4 +1,13 @@
 
+## Meeting Dated: 13-10-2022
+1. Improve the image retrieval corresponding to the noun phrases using Multimodal models (ex. ViLT)
+2. Manually annotate affordances for 250-500 examples for the evaluation of the pipeline.
+3. Pretrain SOTA language models (start with RoBERTa/GPT2) using the affordance information received from the pipeline. E.g. "A boy wearing a Nike shoe. [SEP] Shoe cannot be [MASK]" - predict the MASK (affordance)
+4. Evaluate this prtrained model on the reasoning tasks (such as PIQA).
+
+References to read: 
+1. https://arxiv.org/pdf/2210.06423.pdf (Foundation transformers)
+2. https://arxiv.org/pdf/2007.04245v1.pdf (Understanding Object Affordances Through Verb Usage Patterns)
 
 https://paperswithcode.com/paper/vilt-vision-and-language-transformer-without
 ## Meeting Dated: 01-09-2022
