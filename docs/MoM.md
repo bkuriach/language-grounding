@@ -1,3 +1,15 @@
+## Meeting Dated: 27-10-2022
+1. For a given sentence, extract the noun_phrases and by applying conceptNet attributes (e.g., TypeOf, isA) try to remove the non-objects from the noun_phrase list.
+2. Use the approximate nearest neighbor (ANN) search for text-based image retrieval to retrieve images faster.
+3. Evaluate the predicted affordance labels to the affordance labels that were manually annotated.  The macro-F1 score should be at least 80% to proceed to the further experiments.
+4. Pretrain text-based language models (RoBERTa, GPT-2), multimodal language models (ViLT, visualBERT  etc) using affordance information. While training with both text and image, try to provide more weight on the text premise (need to think).
+5. Evaluate the new trained language model on the different tasks (e.g., PIQA)
+** Focus on the first 3 tasks carefully before jumping into the next tasks.
+
+References to read: 
+1. [https://arxiv.org/pdf/2210.06423.pdf](https://arxiv.org/pdf/1912.01059.pdf) (GGNN: Graph-based GPU Nearest Neighbor
+Search)
+2. [https://arxiv.org/pdf/2007.04245v1.pdf ](https://ieeexplore.ieee.org/document/9101583)(SONG: Approximate Nearest Neighbor Search on GPU)
 
 ## Meeting Dated: 13-10-2022
 1. Improve the image retrieval corresponding to the noun phrases using Multimodal models (ex. ViLT)
